@@ -1,0 +1,38 @@
+/** 
+ * Workaround:
+ *
+ * Use Times New Roman or serif font for input fields
+ * that are of type password to avoid weird font rendering issues
+ * in some browsers (e.g., Firefox)
+**/
+input[type="password"][data-field="password"] {
+    font-family: "Times New Roman", Times, serif;
+}
+
+@font-face {
+    font-family: "Vremya";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../assets/vremya.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Vremya";
+    font-style: italic;
+    font-weight: normal;
+    src: url("../assets/vremya-italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Vremya";
+    font-style: normal;
+    font-weight: bold;
+    src: url("../assets/vremya-bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Vremya";
+    font-style: italic;
+    font-weight: bold;
+    src: url("../assets/vremya-bold-italic.ttf") format("truetype");
+}

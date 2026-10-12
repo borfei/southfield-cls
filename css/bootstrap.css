@@ -1,0 +1,146 @@
+@import url("../lib/bootstrap-3.4.1-dist/css/bootstrap.min.css");
+
+a:focus {
+    outline: none;
+}
+
+body *:has(> .navbar-fixed-top) {
+    padding-top: 50px;
+}
+
+.alert-info {
+    color: unset;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:focus-visible,
+.btn-primary:hover {
+    border: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+.dropdown .dropdown-menu {
+    display: block;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    visibility: hidden;
+}
+
+.dropdown.open .dropdown-menu {
+    max-height: 300px;
+    opacity: 1;
+    transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+    visibility: visible;
+}
+
+.dropdown-menu {
+    box-shadow: none;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+    cursor: pointer;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+.input-group-btn .btn-default {
+    border-color: #ccc;
+}
+
+.modal-content {
+    box-shadow: none !important;
+}
+
+.modal.fade .modal-dialog {
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.modal.fade.in .modal-dialog {
+    opacity: 1;
+}
+
+.modal-header>.close {
+    opacity: 1;
+}
+
+.modal-header .glyphicon {
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.5;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-btn {
+    border: none;
+}
+
+.navbar-collapse {
+    border-top: 0;
+    box-shadow: none;
+}
+
+.navbar-default {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.navbar-inverse {
+    border: 0;
+}
+
+.navbar .navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover {
+    text-decoration: underline;
+}
+
+.navbar-nav>li>img {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.navbar-toggle {
+    border: none;
+}
+
+.page-header {
+    margin-top: 20px;
+}

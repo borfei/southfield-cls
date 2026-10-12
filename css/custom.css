@@ -1,0 +1,151 @@
+body.login {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/landing-02.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(12px);
+}
+
+.content {
+    flex-grow: 1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+body.error {
+    background-image: url("../assets/error.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.container.content.about {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer.links {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+footer.separator {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img.about.purpose {
+    width: 500px;
+    height: 200px;
+    padding: 50px;
+}
+
+@media only screen and (max-width: 992px) {
+    img.about.purpose {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.jumbotron.about p {
+    font-size: unset;
+    font-weight: unset;
+}
+
+.login.admin {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.login.header {
+    margin-top: 20px;
+}
+
+.login.well {
+    border: unset;
+    border-top: #800000 8px solid;
+}
+
+@media only screen and (max-width: 992px) {
+    .login.header {
+        text-align: center;
+    }
+}
+
+.login.landing>* {
+    color: white;
+}
+
+@media only screen and (max-width: 992px) {
+    .login.landing {
+        margin-top: 0;
+    }
+
+    .login.landing>h1 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .login.landing>.login.logo {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.login.main {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 992px) {
+    .login.main {
+        display: block;
+    }
+}
+
+.modal.centered .modal-dialog {
+    top: 30vh;
+    bottom: 30vh;
+}
+
+.modal.centered.fade .modal-dialog {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.modal.centered.fade.in .modal-dialog {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.modal-footer.no-border {
+    border: none;
+}
+
+.modal-header.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal textarea.form-control {
+    min-height: 100px;
+    max-height: 300px;
+    resize: vertical;
+}
+
+.navbar .navbar-text#username {
+    margin-left: 10px;
+}
+
+.navbar.admin {
+    margin-bottom: 20px;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
