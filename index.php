@@ -14,7 +14,7 @@ if (scls_session_user()) {
         $document = "member_transactions.php";
     }
 
-    scls_document_navigate($document ?? "error.php?code=404", true);
+    scls_document_navigate($document ?? "error.php?status=404", true);
 } else {
     // Properly unset user credentials and redirect to login page
     scls_session_user_unset();
