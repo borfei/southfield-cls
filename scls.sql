@@ -100,7 +100,7 @@ CREATE TABLE IF NOT EXISTS `transactions` (
   KEY `member` (`user`),
   CONSTRAINT `transactions_ibfk_1` FOREIGN KEY (`user`) REFERENCES `users` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `transactions_ibfk_2` FOREIGN KEY (`book`) REFERENCES `books` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='List of transactions made by students';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table scls.transactions: ~0 rows (approximately)
 DELETE FROM `transactions`;
@@ -111,7 +111,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `password_hash` varchar(255) NOT NULL COMMENT 'Password hash',
   `created_at` timestamp NOT NULL DEFAULT current_timestamp() COMMENT 'User creation date',
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp() COMMENT 'Last user activity',
-  `role` set('admin','student') NOT NULL DEFAULT 'student' COMMENT 'User role',
+  `role` set('admin','member') NOT NULL DEFAULT 'member' COMMENT 'User role',
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
